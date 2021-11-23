@@ -10,7 +10,7 @@
     "clean": "rm dist/bundle.js",
     "build-dev": "webpack --mode=development",
     "build-prod": "webpack --mode=production",
-    "start": "npm run build-prod"
+    "start": "webpack  --config webpack.prod.js && node server.js"
   },
   "dependencies": {
     "@rjsf/bootstrap-4": "^2.5.1",
